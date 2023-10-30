@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "Abhaya Libre";
+    src: url("AbhayaLibre-ExtraBold.ttf");
+}
+
+:root {
+    --navyBlue: #0D455C;
+}
+
+h1, h2, h3{
+    font-family: "Abhaya Libre";
+}
+
+body {
+    background-color: #F9F3F2;
+    margin: 0;
+}
+
+.logo {
+    font-size: 26px;
+    color: var(--navyBlue);
+    margin-left: 16px;
+}
+
+/*.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 128px;
+    padding-right: 128;
+}*/
+.container{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #F9F3F2;
+}
+
+.desktop-nav {
+    margin-left: auto;
+    margin-right: 16px;
+    font-family: "Abhaya Libre";
+}
+
+.desktop-nav a{
+    text-decoration: none;
+    margin: 0px 15px 0px 15px;
+}
+
+.desktop-nav a:hover{
+    text-decoration: underline;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin-left: auto;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--navyBlue);
+    margin: 6px 0px;
+    transition: 0.4s;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: #C8B6B2;
+    padding-top: 120px;
+    transition: 0.4s;
+    font-family: "Abhaya Libre";
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: var(--navyBlue);
+
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-nav a:hover{
+    background-color: lightskyblue;
+}
+
+@media (max-width: 768px){
+    .desktop-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+.hero-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/sofaforside.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+footer{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-color: var(--navyBlue);
+    width: 100%;
+    height: 70px;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footertext{
+    color: white;
+}
+
+.bi-instagram{
+    color: white;
+}
+
+.bi-linkedin{
+    color: white;
+}
+
+.bi-facebook{
+    color: white;
+}
