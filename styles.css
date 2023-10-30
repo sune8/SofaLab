@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 @font-face {
     font-family: "Abhaya Libre";
     src: url("AbhayaLibre-ExtraBold.ttf");
@@ -5,10 +7,30 @@
 
 :root {
     --navyBlue: #0D455C;
+    --sofaGreen: #3C957D;
+    --creamWhite: #F9F3F2;
 }
 
 h1, h2, h3{
     font-family: "Abhaya Libre";
+    color: var(--navyBlue)
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 body {
@@ -22,13 +44,6 @@ body {
     margin-left: 16px;
 }
 
-/*.container {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding-left: 128px;
-    padding-right: 128;
-}*/
 .container{
     position: fixed;
     top: 0;
@@ -37,6 +52,7 @@ body {
     align-items: center;
     width: 100%;
     background-color: #F9F3F2;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 .desktop-nav {
@@ -48,6 +64,9 @@ body {
 .desktop-nav a{
     text-decoration: none;
     margin: 0px 15px 0px 15px;
+    font-family: Roboto;
+    color: var(--navyBlue);
+    font-weight: bold;
 }
 
 .desktop-nav a:hover{
@@ -97,10 +116,10 @@ body {
     min-height: 100vh;
     display: block;
     z-index: 98;
-    background-color: #C8B6B2;
+    background-color: var(--sofaGreen);
     padding-top: 120px;
     transition: 0.4s;
-    font-family: "Abhaya Libre";
+    font-family: 'Roboto', sans-serif; 
 }
 
 .mobile-nav.is-active {
@@ -114,10 +133,13 @@ body {
     margin: 0 auto 16px;
     text-align: center;
     padding: 12px 16px;
-    background-color: var(--navyBlue);
-
-    color: white;
+    background-color: var(--creamWhite);
+    border-radius: 10px;
+    color: var(--navyBlue);
     text-decoration: none;
+    font-weight: bold;
+    box-shadow: rgba(149, 157, 165, 0.57) 0px 8px 24px;
+    
 }
 
 .mobile-nav a:hover{
@@ -140,46 +162,54 @@ body {
     }
 }
 
-.hero-image{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/sofaforside.png");
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-footer{
+footer {
     margin-top: 20px;
-    margin-bottom: 0px;
     background-color: var(--navyBlue);
     width: 100%;
     height: 70px;
+    margin-bottom: 0px;
 
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .column {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .footertext{
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: small;
+    margin-bottom: 10px;
 }
 
-.bi-instagram{
-    color: white;
+.row {
+    display: flex;
+    align-items: center;
 }
 
-.bi-linkedin{
+.icons {
+    font-size: 30px;
     color: white;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+.sofalogoimg{
+    margin-left: 6px;
+    width: 28px;
 }
 
-.bi-facebook{
-    color: white;
+/* Din egen personlige styling herunder*/
+
+section {
+    padding: 16px;
+    margin-top: 60px;
 }
