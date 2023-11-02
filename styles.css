@@ -194,6 +194,7 @@ footer {
 .row {
     display: flex;
     align-items: center;
+    margin: 10px;
 }
 
 .icons {
@@ -210,6 +211,176 @@ footer {
 /* Din egen personlige styling herunder*/
 
 section {
-    padding: 16px;
     margin-top: 60px;
+}
+
+.button {
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+    width: 200px;
+    background-color: rgba(255,255,255,0.3);
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    font-family: Roboto;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+a:hover{
+    padding: 20px;
+}
+
+.suneprocessen{
+    color: #32403E;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 32px;
+    border-bottom: var(--navyBlue) 10px soild;
+    border-bottom: 1px solid black;
+    font-weight:  normal;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+
+.knap2{
+
+    .sunebutton2{
+        display: flex;
+        justify-content: center;
+        color: var(--creamWhite);
+        font-size: 30px;
+        background-color: #3C957D;
+        border: 5px solid;
+        border-radius: 70px;
+        padding: 32px 46px;
+        text-decoration: none;
+        text-align: center;
+        margin: auto;
+        font-family: 'Roboto', sans-serif;
+        font-size: x-large;
+        color: var(--creamWhite);
+        box-shadow: 0 4px;
+    }
+}
+/*HER ligger der to artikler med 4 divbokse i*/
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+  
+    justify-content: space-evenly;
+    
+
+}
+.columnbox{
+    display: flex;
+    flex-direction: column;
+    background-color: deeppink;
+    height: 200px;
+    
+    justify-content: space-between;
+}
+.taltext{
+    background-color: lightskyblue;
+    padding: 0px;
+    
+}
+
+    
+
+
+
+
+.suneoverskrift2{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-decoration: underline 5px;
+}
+
+.suneklima{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.suneklima div{
+    background-color: #D1C7C5;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 50px;
+    padding: 50px;
+}
+
+.sunerow{
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-section {
+    margin-bottom: 500px;
+}
+
+.hero {
+    max-height: 200px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-container {
+    display: flex;
+}
+
+.text-container a {
+    max-width: 200px;
+}
+
+.hero-image {
+    max-height: 500px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    bottom: 300px;
+    position: relative;
+}
+
+@media (max-width: 768px){
+
+    .hero-image img {
+        bottom: 0px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-section {
+        margin-bottom: 200px;
+    }
+
+}
+
+.hero-text{
+    text-align: center;
+    font-family: "Abhaya Libre";
+    color: #F9F3F2;
+}
+
+.suneprocessen{
+    color: #0D455C;
+    font-family: "Abhaya Libre";
+    font-size: 70px;
 }
